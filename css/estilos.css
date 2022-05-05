@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+}
+
+footer {
+    background-color: rgb(0, 0, 0) ;
+    color: white;
+    font-family: 'Akshar', sans-serif;
+}
+.footer__derechos {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(255, 204, 2);
+}
+h1 {
+    margin: 20px;
+}
+
+.header__navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+ul {
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+    font-family: 'Akshar', sans-serif;
+    padding: 10px;
+}
+
+li {
+    margin: 5px;
+    font-size: 24px;
+
+}
+
+main{
+    font-family: 'Akshar', sans-serif;
+}
+
+.principal__titulo {
+    text-align: center;
+
+}
+
+.principal__link {
+    text-align: center;
+}
+
+.rs {
+    text-align: right;
+    margin: 20px;
+    padding: 0px;
+
+}
+
+.rs__logo {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.footer__img {
+    margin: 10px;
+    padding: 0px;
+}
+
+/* ACA EMPIEZA PORTAFOLIO */
+.portafolio__img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+}
+
+.img1 {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* ACA EMPIEZA "SERVICIOS" */
+.servicios__gral {
+    display: flex;
+    justify-content: space-around;
+}
+
+.servicios {
+    background-color: rgb(255, 204, 2) ;
+    padding: 10px;
+    margin: 30px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+/* ACA EMPIEZA "SOBRE NOSOTROS" */
+
+.sn {
+    display:flex ;
+    align-items: center;
+}
+
+.img__presentacion {
+    display: flex;
+    width: 30%;
+    padding: 20px;
+    border-radius: 30px;
+}
+.presentacion {
+    display: flex;
+    align-items: center;
+    margin: 70px;
+}
+
+
+
+
+/* ACA EMPIEZA "CONTACTENOS" */
+
+.formularios {
+    padding: 20px;
+}
+
+.fomulario1 {
+    margin: 30px;
+}
+
+.formulario2 {
+    margin: 30px;
+}
+
+.formulario3 {
+    margin: 10px
+}
