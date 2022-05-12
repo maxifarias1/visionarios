@@ -8,13 +8,27 @@ header {
     background-color: black;
 }
 
+.header__img {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 20px;
+}
+
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(0, 0, 0) ;
     color: white;
     font-family: 'Akshar', sans-serif;
 }
 .footer__derechos {
     text-align: center;
+}
+
+.footer__img {
+    width: 4rem;
+    height: 4rem;
 }
 
 body {
@@ -67,15 +81,19 @@ main{
 
 .rs {
     text-align: right;
-    margin: 20px;
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+/*     margin: 20px;
+    padding: 0px; */
 
 }
 
 .rs__logo {
     display: flex;
+    width: 30px;
     justify-content: flex-end;
-    margin: 10px;
 }
 
 .footer__img {
@@ -85,33 +103,125 @@ main{
 
 /* ACA EMPIEZA PORTAFOLIO */
 .portafolio__img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "uno dos tres"
+                        "cuatro cinco seis"
+                        "siete ocho nueve"; 
+    gap: 10px;
 }
 
-.img1 {
-    margin: 20px;
+.portafolio {
+    display: flex;
+    justify-content: center;
+}
+
+
+.img {
+    width: 80%;
+    margin: 10px;
     border-radius: 20px;
 }
 
+.img__uno {
+    grid-area: uno;
+}
+
+
+.img__dos {
+    grid-area: dos;
+
+}
+
+.img__tres {
+    grid-area: tres;
+
+}
+
+.img__cuatro {
+    grid-area: cuatro;
+
+}
+
+.img__cinco {
+    grid-area: cinco;
+
+}
+
+.img__seis {
+    grid-area: seis;
+
+}
+
+.img__siete {
+    grid-area: siete;
+
+}
+
+.img__ocho {
+    grid-area: ocho;
+
+}
+
+.img__nueve {
+    grid-area: nueve;
+
+}
+
+
+
+
 /* ACA EMPIEZA "SERVICIOS" */
+
+.serviciosBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr  0.5fr 0.5fr 0.25fr;
+    grid-template-areas: "header header header"
+                        "h1 h1 h1"
+                        "uno dos tres"
+                        "footer footer footer";
+}
+.header__servicios{
+    grid-area: header;
+}
+
+.titulo__servicios{
+    grid-area: h1;
+}
+
+.servicios__uno{
+    grid-area: uno;
+}
+
+.servicios__dos{
+    grid-area: dos;
+}
+
+.servicios__tres{
+    grid-area: tres;
+}
+
+.footer__servicios{
+    grid-area: footer;
+}
+
+
 .servicios__gral {
     display: flex;
     justify-content: space-around;
+    justify-self: center;
 }
 
 .servicios {
     background-color: rgb(255, 204, 2) ;
     padding: 10px;
-    margin: 30px;
-    width: 200px;
-    height: 300px;
+    margin: 2.5rem;
+    width: 16.5rem;
+    height: 25rem;
     border: 5px solid black;
     border-radius: 10px;
-    justify-content: center;
 }
 
 /* ACA EMPIEZA "SOBRE NOSOTROS" */
@@ -125,12 +235,12 @@ main{
     display: flex;
     width: 30%;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 2.5rem;
 }
 .presentacion {
     display: flex;
     align-items: center;
-    margin: 70px;
+    margin: 0 4rem;
 }
 
 
@@ -143,13 +253,85 @@ main{
 }
 
 .fomulario1 {
-    margin: 30px;
+    margin: 2.5rem;
 }
 
 .formulario2 {
-    margin: 30px;
+    margin: 2.5rem;
 }
 
 .formulario3 {
     margin: 10px
+}
+
+/* MEDIA QUERIE  */
+
+
+@media screen and (max-width: 720px) {
+    .portafolio__img {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "uno dos"
+                            "tres cuatro"
+                            "cinco seis"
+                            "siete ocho"
+                            "nueve nueve";
+    }
+    footer {
+        flex-direction: column;
+    }
+
+ul {
+    flex-direction: column;
+}
+
+li {
+    font-size: 18px;
+
+}
+
+.serviciosBody {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                        "h1 h1"
+                        "uno dos"
+                        "tres tres"
+                        "footer footer";
+}
+}
+
+@media screen and (max-width: 540px) {
+    .portafolio__img {
+        grid-template-columns: 1fr;
+        grid-template-areas: "uno"
+                            "dos"
+                            "tres"
+                            "cuatro"
+                            "cinco"
+                            "seis"
+                            "siete"
+                            "ocho"
+                            "nueve";
+    }
+    footer {
+        flex-direction: column;
+}
+
+ul {
+    flex-direction: column;
+}
+
+li {
+    font-size: 16px;
+
+}
+
+.serviciosBody {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                        "h1"
+                        "uno"
+                        "dos"
+                        "tres"
+                        "footer";
+}
 }
