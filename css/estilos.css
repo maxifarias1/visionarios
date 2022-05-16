@@ -63,7 +63,11 @@ ul {
 li {
     margin: 5px;
     font-size: 24px;
+    color: white;
+}
 
+li:hover {
+    transform: scale(1.1);
 }
 
 main{
@@ -122,6 +126,10 @@ main{
     width: 80%;
     margin: 10px;
     border-radius: 20px;
+}
+
+.img:hover {
+    transform: scale(1.1);
 }
 
 .img__uno {
@@ -211,7 +219,6 @@ main{
 .servicios__gral {
     display: flex;
     justify-content: space-around;
-    justify-self: center;
 }
 
 .servicios {
@@ -222,6 +229,7 @@ main{
     height: 25rem;
     border: 5px solid black;
     border-radius: 10px;
+    justify-content: center;
 }
 
 /* ACA EMPIEZA "SOBRE NOSOTROS" */
@@ -250,6 +258,27 @@ main{
 
 .formularios {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border-radius: 10px;
+    height: 1.5rem;
+}
+
+textarea {
+    border-radius: 10px;
+    height: 3.1rem;
+}
+
+.botones__uno {
+    width: 4.6rem;
+}
+
+.contactenos__uno {
+    margin: 10px;
 }
 
 .fomulario1 {
