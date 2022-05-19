@@ -8,6 +8,18 @@ header {
     background-color: black;
 }
 
+.bg-black {
+    background-color: black;
+}
+
+.nav__color {
+    color: white;
+}
+
+.bg-yellow {
+    background-color: rgb(255, 204, 2) ;
+}
+
 .header__img {
     width: 12.5rem;
     height: 12.5rem;
