@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
 }
 
 header {
@@ -93,6 +92,7 @@ main{
 
 .principal__link {
     text-align: center;
+    text-decoration: none;
 }
 
 .rs {
@@ -101,9 +101,6 @@ main{
     flex-direction: column;
     align-items: flex-end;
     padding: 10px;
-/*     margin: 20px;
-    padding: 0px; */
-
 }
 
 .rs__logo {
@@ -176,16 +173,17 @@ main{
 
 .img__siete {
     grid-area: siete;
-
+    margin-bottom: 20px;
 }
 
 .img__ocho {
     grid-area: ocho;
-
+    margin-bottom: 20px;
 }
 
 .img__nueve {
     grid-area: nueve;
+    margin-bottom: 20px;
 
 }
 
@@ -260,7 +258,12 @@ main{
 .presentacion {
     display: flex;
     align-items: center;
+    text-align: center;
     margin: 0 4rem;
+}
+.img__ceo {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -285,8 +288,13 @@ textarea {
     height: 3.1rem;
 }
 
+.botones__uno:hover {
+    transform: scale(1.1);
+}
+
 .botones__uno {
     width: 4.6rem;
+    margin: 0.6rem;
 }
 
 .contactenos__uno {
@@ -318,6 +326,15 @@ textarea {
                             "nueve nueve";
     }
     footer {
+        flex-direction: column;
+    }
+    .container-fluid {
+        flex-direction: column;
+    }
+    .formularios {
+        flex-direction: column;
+    }
+    .sn {
         flex-direction: column;
     }
 
