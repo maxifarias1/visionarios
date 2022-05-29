@@ -1,0 +1,299 @@
+@import 'variables';
+@import 'mediaqueries';
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: $color-fondos ;
+    
+}
+
+.bg-black {
+    background-color: $color-fondos;
+}
+
+.nav__color {
+    color: $color-letra;
+}
+
+.bg-yellow {
+    background-color: $color-principal;
+}
+
+.header {
+    &__img {
+        width: 12.5rem;
+        height: 12.5rem;
+        margin: 20px;
+    }
+    &__navegacion {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-fondos;
+    color: $color-letra;
+    font-family: $letra-principal;
+}
+
+.footer {
+    &__derechos {
+        text-align: center;
+    }
+    &__img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+
+body {
+    background-color: $color-principal;
+}
+h1 {
+    margin: 20px;
+}
+
+.principal {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    &__titulo {
+        text-align: center;
+    }
+    &__link {
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+
+ul {
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+    font-family: $letra-principal;
+    padding: 10px;
+}
+
+li {
+    margin: 5px;
+    font-size: 24px;
+    color: $color-letra;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+main{
+    font-family: $letra-principal;
+}
+
+
+.rs {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    &__logo {
+        display: flex;
+        width: 30px;
+        justify-content: flex-end;
+        height: 24px;
+    }
+}
+
+.footer__img {
+    margin: 10px;
+    padding: 0px;
+}
+
+/* ACA EMPIEZA PORTAFOLIO */
+
+.portafolio {
+    display: flex;
+    justify-content: center;
+    &__img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "uno dos tres"
+                        "cuatro cinco seis"
+                        "siete ocho nueve"; 
+        gap: 10px;    
+    }
+}
+
+
+.img {
+    width: 80%;
+    margin: 10px;
+    border-radius: 20px;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &__uno {
+        grid-area: uno;
+    }
+    &__dos {
+        grid-area: dos;
+    }
+    &__tres {
+        grid-area: tres;
+    }
+    &__cuatro {
+        grid-area: cuatro;
+    }
+    &__cinco {
+        grid-area: cinco;
+    }
+    &__seis {
+        grid-area: seis;
+    }
+    &__siete {
+        grid-area: siete;
+        margin-bottom: 15px;
+    }
+    &__ocho {
+        grid-area: ocho;
+        margin-bottom: 15px;
+    }
+    &__nueve {
+        grid-area: nueve;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* ACA EMPIEZA "SERVICIOS" */
+
+.serviciosBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr  0.5fr 0.5fr 0.25fr;
+    grid-template-areas: "header header header"
+                        "h1 h1 h1"
+                        "uno dos tres"
+                        "footer footer footer";
+}
+.header__servicios{
+    grid-area: header;
+}
+
+.titulo__servicios{
+    grid-area: h1;
+}
+
+.footer__servicios{
+    grid-area: footer;
+}
+
+.servicios {
+    background-color: $color-principal;
+    padding: 10px;
+    margin: 2.5rem;
+    width: 16.5rem;
+    height: 25rem;
+    border: 5px solid $color-fondos;
+    border-radius: 10px;
+    justify-content: center;
+    &__uno{
+        grid-area: uno;
+    }
+    &__dos{
+        grid-area: dos;
+    }
+    &__tres{
+        grid-area: tres;
+    }
+    &__gral {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* ACA EMPIEZA "SOBRE NOSOTROS" */
+
+.sn {
+    display:flex ;
+    align-items: center;
+}
+
+.img {
+    &__presentacion {
+        display: flex;
+        width: 30%;
+        padding: 20px;
+        border-radius: 2.5rem;
+    }
+    &__ceo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 4rem;
+}
+
+
+
+/* ACA EMPIEZA "CONTACTENOS" */
+
+.formularios {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border-radius: 10px;
+    height: 1.5rem;
+}
+
+textarea {
+    border-radius: 10px;
+    height: 3.1rem;
+}
+
+.botones__uno:hover {
+    transform: scale(1.1);
+}
+
+.botones__uno {
+    width: 4.6rem;
+    margin: 0.6rem;
+}
+
+.contactenos__uno {
+    margin: 10px;
+}
+
+.fomulario1 {
+    margin: 2.5rem;
+}
+
+.formulario2 {
+    margin: 2.5rem;
+}
+
+.formulario3 {
+    margin: 10px
+}
+

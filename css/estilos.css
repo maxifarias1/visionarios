@@ -1,395 +1,255 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+/* COLORES */
+/* LETRAS */
+@media screen and (max-width: 720px) {
+  .portafolio__img {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis" "siete ocho" "nueve nueve"; }
+  footer {
+    flex-direction: column; }
+  .container-fluid {
+    flex-direction: column; }
+  .formularios {
+    flex-direction: column; }
+  .sn {
+    flex-direction: column; }
+  ul {
+    flex-direction: column; }
+  li {
+    font-size: 18px; }
+  .serviciosBody {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "h1 h1" "uno dos" "tres tres" "footer footer"; } }
+
+@media screen and (max-width: 540px) {
+  .portafolio__img {
+    grid-template-columns: 1fr;
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve"; }
+  footer {
+    flex-direction: column; }
+  ul {
+    flex-direction: column; }
+  li {
+    font-size: 16px; }
+  .serviciosBody {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "h1" "uno" "dos" "tres" "footer"; } }
+
+* {
+  margin: 0px;
+  padding: 0px; }
 
 header {
-    background-color: black;
-}
+  background-color: black; }
 
 .bg-black {
-    background-color: black;
-}
+  background-color: black; }
 
 .nav__color {
-    color: white;
-}
+  color: white; }
 
 .bg-yellow {
-    background-color: rgb(255, 204, 2) ;
-}
+  background-color: #ffcc02; }
 
 .header__img {
-    width: 12.5rem;
-    height: 12.5rem;
-    margin: 20px;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(0, 0, 0) ;
-    color: white;
-    font-family: 'Akshar', sans-serif;
-}
-.footer__derechos {
-    text-align: center;
-}
-
-.footer__img {
-    width: 4rem;
-    height: 4rem;
-}
-
-body {
-    background-color: rgb(255, 204, 2);
-}
-h1 {
-    margin: 20px;
-}
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 20px; }
 
 .header__navegacion {
-    display: flex;
-    justify-content: space-between;
-}
+  display: flex;
+  justify-content: space-between; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-family: "Akshar", sans-serif; }
+
+.footer__derechos {
+  text-align: center; }
+
+.footer__img {
+  width: 4rem;
+  height: 4rem; }
+
+body {
+  background-color: #ffcc02; }
+
+h1 {
+  margin: 20px; }
 
 .principal {
-    display: block;
-    margin: 0px auto;
-    width: 80%;
-    padding: 10px;
-    border-radius: 20px;
-
-}
+  display: block;
+  margin: 0px auto;
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px; }
+  .principal__titulo {
+    text-align: center; }
+  .principal__link {
+    text-align: center;
+    text-decoration: none; }
 
 ul {
-    display: flex;
-    align-items: flex-end;
-    list-style-type: none;
-    font-family: 'Akshar', sans-serif;
-    padding: 10px;
-}
+  display: flex;
+  align-items: flex-end;
+  list-style-type: none;
+  font-family: "Akshar", sans-serif;
+  padding: 10px; }
 
 li {
-    margin: 5px;
-    font-size: 24px;
-    color: white;
-}
+  margin: 5px;
+  font-size: 24px;
+  color: white; }
+  li:hover {
+    transform: scale(1.1); }
 
-li:hover {
-    transform: scale(1.1);
-}
-
-main{
-    font-family: 'Akshar', sans-serif;
-}
-
-.principal__titulo {
-    text-align: center;
-
-}
-
-.principal__link {
-    text-align: center;
-    text-decoration: none;
-}
+main {
+  font-family: "Akshar", sans-serif; }
 
 .rs {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 10px;
-}
-
-.rs__logo {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px; }
+  .rs__logo {
     display: flex;
     width: 30px;
     justify-content: flex-end;
-}
+    height: 24px; }
 
 .footer__img {
-    margin: 10px;
-    padding: 0px;
-}
+  margin: 10px;
+  padding: 0px; }
 
 /* ACA EMPIEZA PORTAFOLIO */
-.portafolio__img {
+.portafolio {
+  display: flex;
+  justify-content: center; }
+  .portafolio__img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "uno dos tres"
-                        "cuatro cinco seis"
-                        "siete ocho nueve"; 
-    gap: 10px;
-}
-
-.portafolio {
-    display: flex;
-    justify-content: center;
-}
-
+    grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve";
+    gap: 10px; }
 
 .img {
-    width: 80%;
-    margin: 10px;
-    border-radius: 20px;
-}
-
-.img:hover {
-    transform: scale(1.1);
-}
-
-.img__uno {
-    grid-area: uno;
-}
-
-
-.img__dos {
-    grid-area: dos;
-
-}
-
-.img__tres {
-    grid-area: tres;
-
-}
-
-.img__cuatro {
-    grid-area: cuatro;
-
-}
-
-.img__cinco {
-    grid-area: cinco;
-
-}
-
-.img__seis {
-    grid-area: seis;
-
-}
-
-.img__siete {
+  width: 80%;
+  margin: 10px;
+  border-radius: 20px; }
+  .img:hover {
+    transform: scale(1.1); }
+  .img__uno {
+    grid-area: uno; }
+  .img__dos {
+    grid-area: dos; }
+  .img__tres {
+    grid-area: tres; }
+  .img__cuatro {
+    grid-area: cuatro; }
+  .img__cinco {
+    grid-area: cinco; }
+  .img__seis {
+    grid-area: seis; }
+  .img__siete {
     grid-area: siete;
-    margin-bottom: 20px;
-}
-
-.img__ocho {
+    margin-bottom: 15px; }
+  .img__ocho {
     grid-area: ocho;
-    margin-bottom: 20px;
-}
-
-.img__nueve {
+    margin-bottom: 15px; }
+  .img__nueve {
     grid-area: nueve;
-    margin-bottom: 20px;
-
-}
-
-
-
+    margin-bottom: 15px; }
 
 /* ACA EMPIEZA "SERVICIOS" */
-
 .serviciosBody {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.25fr  0.5fr 0.5fr 0.25fr;
-    grid-template-areas: "header header header"
-                        "h1 h1 h1"
-                        "uno dos tres"
-                        "footer footer footer";
-}
-.header__servicios{
-    grid-area: header;
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr  0.5fr 0.5fr 0.25fr;
+  grid-template-areas: "header header header" "h1 h1 h1" "uno dos tres" "footer footer footer"; }
 
-.titulo__servicios{
-    grid-area: h1;
-}
+.header__servicios {
+  grid-area: header; }
 
-.servicios__uno{
-    grid-area: uno;
-}
+.titulo__servicios {
+  grid-area: h1; }
 
-.servicios__dos{
-    grid-area: dos;
-}
-
-.servicios__tres{
-    grid-area: tres;
-}
-
-.footer__servicios{
-    grid-area: footer;
-}
-
-
-.servicios__gral {
-    display: flex;
-    justify-content: space-around;
-}
+.footer__servicios {
+  grid-area: footer; }
 
 .servicios {
-    background-color: rgb(255, 204, 2) ;
-    padding: 10px;
-    margin: 2.5rem;
-    width: 16.5rem;
-    height: 25rem;
-    border: 5px solid black;
-    border-radius: 10px;
-    justify-content: center;
-}
+  background-color: #ffcc02;
+  padding: 10px;
+  margin: 2.5rem;
+  width: 16.5rem;
+  height: 25rem;
+  border: 5px solid black;
+  border-radius: 10px;
+  justify-content: center; }
+  .servicios__uno {
+    grid-area: uno; }
+  .servicios__dos {
+    grid-area: dos; }
+  .servicios__tres {
+    grid-area: tres; }
+  .servicios__gral {
+    display: flex;
+    justify-content: space-around; }
 
 /* ACA EMPIEZA "SOBRE NOSOTROS" */
-
 .sn {
-    display:flex ;
-    align-items: center;
-}
+  display: flex;
+  align-items: center; }
 
 .img__presentacion {
-    display: flex;
-    width: 30%;
-    padding: 20px;
-    border-radius: 2.5rem;
-}
-.presentacion {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0 4rem;
-}
+  display: flex;
+  width: 30%;
+  padding: 20px;
+  border-radius: 2.5rem; }
+
 .img__ceo {
-    display: flex;
-    flex-direction: column;
-}
+  display: flex;
+  flex-direction: column; }
 
-
-
+.presentacion {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 4rem; }
 
 /* ACA EMPIEZA "CONTACTENOS" */
-
 .formularios {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 input {
-    border-radius: 10px;
-    height: 1.5rem;
-}
+  border-radius: 10px;
+  height: 1.5rem; }
 
 textarea {
-    border-radius: 10px;
-    height: 3.1rem;
-}
+  border-radius: 10px;
+  height: 3.1rem; }
 
 .botones__uno:hover {
-    transform: scale(1.1);
-}
+  transform: scale(1.1); }
 
 .botones__uno {
-    width: 4.6rem;
-    margin: 0.6rem;
-}
+  width: 4.6rem;
+  margin: 0.6rem; }
 
 .contactenos__uno {
-    margin: 10px;
-}
+  margin: 10px; }
 
 .fomulario1 {
-    margin: 2.5rem;
-}
+  margin: 2.5rem; }
 
 .formulario2 {
-    margin: 2.5rem;
-}
+  margin: 2.5rem; }
 
 .formulario3 {
-    margin: 10px
-}
-
-/* MEDIA QUERIE  */
-
-
-@media screen and (max-width: 720px) {
-    .portafolio__img {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "uno dos"
-                            "tres cuatro"
-                            "cinco seis"
-                            "siete ocho"
-                            "nueve nueve";
-    }
-    footer {
-        flex-direction: column;
-    }
-    .container-fluid {
-        flex-direction: column;
-    }
-    .formularios {
-        flex-direction: column;
-    }
-    .sn {
-        flex-direction: column;
-    }
-
-ul {
-    flex-direction: column;
-}
-
-li {
-    font-size: 18px;
-
-}
-
-.serviciosBody {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header"
-                        "h1 h1"
-                        "uno dos"
-                        "tres tres"
-                        "footer footer";
-}
-}
-
-@media screen and (max-width: 540px) {
-    .portafolio__img {
-        grid-template-columns: 1fr;
-        grid-template-areas: "uno"
-                            "dos"
-                            "tres"
-                            "cuatro"
-                            "cinco"
-                            "seis"
-                            "siete"
-                            "ocho"
-                            "nueve";
-    }
-    footer {
-        flex-direction: column;
-}
-
-ul {
-    flex-direction: column;
-}
-
-li {
-    font-size: 16px;
-
-}
-
-.serviciosBody {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header"
-                        "h1"
-                        "uno"
-                        "dos"
-                        "tres"
-                        "footer";
-}
-}
+  margin: 10px; }
