@@ -108,7 +108,7 @@ main {
     gap: 10px; }
 
 .img {
-  width: 15.6rem;
+  width: 80%;
   margin: 10px;
   border-radius: 20px; }
   .img:hover {
