@@ -1,0 +1,28 @@
+header {
+    background-color: $color-fondos ;
+    
+}
+
+.bg-black {
+    background-color: $color-fondos;
+}
+
+.nav__color {
+    color: $color-letra;
+}
+
+.bg-yellow {
+    background-color: $color-principal;
+}
+
+.header {
+    &__img {
+        width: 12.5rem;
+        height: 12.5rem;
+        margin: 20px;
+    }
+    &__navegacion {
+        display: flex;
+        justify-content: space-between;
+    }
+}

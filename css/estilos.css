@@ -1,42 +1,40 @@
 /* COLORES */
 /* LETRAS */
-@media screen and (max-width: 720px) {
-  .portafolio__img {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "uno dos" "tres cuatro" "cinco seis" "siete ocho" "nueve nueve"; }
-  footer {
-    flex-direction: column; }
-  .container-fluid {
-    flex-direction: column; }
-  .formularios {
-    flex-direction: column; }
-  .sn {
-    flex-direction: column; }
-  ul {
-    flex-direction: column; }
-  li {
-    font-size: 18px; }
-  .serviciosBody {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "h1 h1" "uno dos" "tres tres" "footer footer"; } }
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-family: "Akshar", sans-serif; }
 
-@media screen and (max-width: 540px) {
-  .portafolio__img {
-    grid-template-columns: 1fr;
-    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve"; }
-  footer {
-    flex-direction: column; }
-  ul {
-    flex-direction: column; }
-  li {
-    font-size: 16px; }
-  .serviciosBody {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "h1" "uno" "dos" "tres" "footer"; } }
+.footer__derechos {
+  text-align: center; }
 
-* {
-  margin: 0px;
+.footer__img {
+  width: 4rem;
+  height: 4rem; }
+
+.rs {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  margin-right: 5px; }
+  .rs__logo {
+    display: flex;
+    width: 30px;
+    justify-content: flex-end;
+    height: 24px;
+    margin: 5px; }
+
+.footer__img {
+  margin: 10px;
   padding: 0px; }
+
+.footer__img:hover {
+  transform: scale(1.1); }
 
 header {
   background-color: black; }
@@ -59,20 +57,9 @@ header {
   display: flex;
   justify-content: space-between; }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  font-family: "Akshar", sans-serif; }
-
-.footer__derechos {
-  text-align: center; }
-
-.footer__img {
-  width: 4rem;
-  height: 4rem; }
+* {
+  margin: 0px;
+  padding: 0px; }
 
 body {
   background-color: #ffcc02; }
@@ -109,24 +96,6 @@ li {
 main {
   font-family: "Akshar", sans-serif; }
 
-.rs {
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 10px;
-  margin-right: 5px; }
-  .rs__logo {
-    display: flex;
-    width: 30px;
-    justify-content: flex-end;
-    height: 24px;
-    margin: 5px; }
-
-.footer__img {
-  margin: 10px;
-  padding: 0px; }
-
 /* ACA EMPIEZA PORTAFOLIO */
 .portafolio {
   display: flex;
@@ -139,7 +108,7 @@ main {
     gap: 10px; }
 
 .img {
-  width: 80%;
+  width: 15.6rem;
   margin: 10px;
   border-radius: 20px; }
   .img:hover {
@@ -167,27 +136,37 @@ main {
     margin-bottom: 15px; }
 
 /* ACA EMPIEZA "SERVICIOS" */
-.serviciosBody {
+.servicios__principal {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.25fr  0.5fr 0.5fr;
-  grid-template-areas: "header header header" "h1 h1 h1" "uno dos tres" "footer footer footer"; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "uno dos tres"; }
 
-.header__servicios {
-  grid-area: header; }
+.serv__uno {
+  grid-area: uno; }
+
+.serv__dos {
+  grid-area: dos; }
+
+.serv__tres {
+  grid-area: tres; }
+
+.servicios__principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
 
 .titulo__servicios {
-  grid-area: h1; }
-
-.footer__servicios {
-  grid-area: footer; }
+  margin-top: 1.25rem; }
 
 .servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffcc02;
   padding: 10px;
   margin: 2.5rem;
   width: 16.5rem;
-  height: 25rem;
   border: 5px solid black;
   border-radius: 10px;
   justify-content: center; }
@@ -201,6 +180,9 @@ main {
     display: flex;
     justify-content: space-around; }
 
+.servicios__cont {
+  margin-top: 1.25rem; }
+
 /* ACA EMPIEZA "SOBRE NOSOTROS" */
 .sn {
   display: flex;
@@ -208,7 +190,7 @@ main {
 
 .img__presentacion {
   display: flex;
-  width: 30%;
+  width: 20%;
   padding: 20px;
   border-radius: 2.5rem; }
 
@@ -242,7 +224,8 @@ textarea {
 
 .botones__uno {
   width: 4.6rem;
-  margin: 0.6rem; }
+  margin: 0.6rem;
+  margin-bottom: 20px; }
 
 .contactenos__uno {
   margin: 10px; }
@@ -255,3 +238,58 @@ textarea {
 
 .formulario3 {
   margin: 10px; }
+
+.contacto__gral {
+  margin-top: 1.8rem; }
+
+.contacto {
+  margin-bottom: 1.25rem; }
+
+.contacto__uno {
+  font-family: "Akshar", sans-serif;
+  font-size: 18px;
+  margin-left: 1.8rem; }
+
+@media screen and (max-width: 720px) {
+  .portafolio__img {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis" "siete ocho" "nueve nueve"; }
+  footer {
+    flex-direction: column; }
+  .container-fluid {
+    flex-direction: column; }
+  .formularios {
+    flex-direction: column; }
+  .sn {
+    flex-direction: column; }
+  ul {
+    flex-direction: column; }
+  li {
+    font-size: 18px; }
+  .servicios__principal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno dos"  "tres"; }
+  .servicios__principal {
+    flex-direction: column; } }
+
+@media screen and (max-width: 540px) {
+  .portafolio__img {
+    grid-template-columns: 1fr;
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve"; }
+  footer {
+    flex-direction: column; }
+  ul {
+    flex-direction: column; }
+  li {
+    font-size: 16px; }
+  .servicios__principal {
+    grid-template-columns: 1fr;
+    grid-template-areas: "uno" "dos" "tres"; }
+  .servicios__principal {
+    flex-direction: column;
+    align-items: center; }
+  .presentacion {
+    margin-bottom: 1.25rem; } }
+
+.img__presentacion {
+  width: 20rem; }

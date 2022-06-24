@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-fondos;
+    color: $color-letra;
+    font-family: $letra-principal;
+
+}
+
+.footer {
+    &__derechos {
+        text-align: center;
+    }
+    &__img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.rs {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    margin-right: 5px;
+    &__logo {
+        display: flex;
+        width: 30px;
+        justify-content: flex-end;
+        height: 24px;
+        margin: 5px;
+    }
+}
+
+
+.footer__img {
+    margin: 10px;
+    padding: 0px;
+}
+.footer__img:hover {
+    transform: scale(1.1);
+}
